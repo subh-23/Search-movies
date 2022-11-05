@@ -4,7 +4,7 @@ export const MovieCard = ({ movie }) => {
   return (
     <div className="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
       <a href="#">
-        <img className="rounded-t-lg" width="100%" height="100%" src={movie.Poster} alt={movie.Title} />
+        <img className="rounded-t-lg" width="100%" height="100%" src={movie.Poster!=='N/A'?movie.Poster:'https://via.placeholder.com/400'} alt={movie.Title} />
       </a>
       <div className="p-5">
         <a href="#">

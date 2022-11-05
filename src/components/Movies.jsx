@@ -6,7 +6,7 @@ export const Movies = ({ allMovies }) => {
   return (
     <>
       <div className="text-center m-20 text-2xl text-white font-medium">
-        All {Input} Movies
+        All Movies
       </div>
       <div className="grid gap-6 md:grid-cols-3 m-20">
         {allMovies.length > 0 ? (
